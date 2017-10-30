@@ -58,15 +58,25 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " data-toggle="modal" data-target="#modal_login" href="#">Iniciar Sesión</a>
-            </li>
+                  <a class="nav-link js-scroll-trigger dropdown-toggle" data-toggle="dropdown" href="#">Iniciar Sesión</a>
+                <div class="dropdown">
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation" class="nav-item">
+                            <a role="menuitem" class="nav-link js-scroll-trigger" tabindex="-1" data-toggle="modal" data-target="#modal_login" href="#">Cliente</a>
+                        </li>
+                        <li role="presentation" class="nav-item">
+                            <a role="menuitem" class="nav-link js-scroll-trigger" tabindex="-1" data-toggle="modal" data-target="#modal_logint" href="#">Trabajador</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>  
             
             
           </ul>
         </div>
       </div>
     </nav>
-<!-- modal del login-->
+<!-- modal del login cliente-->
   <div class="modal fade" id="modal_login" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -80,7 +90,7 @@
       </div>
       <div class="modal-body m-0 ">
      <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
-        <form>
+        <form >
           <div class="form-group">
             <label for="recipient-name" class="form-control-label"><img src="icono/ic_account_circle_black_24dp_1x.png"  class="img-responsive">Usuario:</label>
             <input type="text" class="form-control" id="usuario">
@@ -95,6 +105,41 @@
         <p></p>
        <center> <a class="my-4" data-dismiss="modal" data-toggle="modal" data-target="#modal_recuperacion" href="#" >¿Olvidaste tu contraseña?</a> &nbsp;
          <a  data-dismiss="modal" data-toggle="modal" data-target="#modal_registro" href="#" >Registrate</a> </center>
+        </form>
+        
+       
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- fin modal-->
+      <!-- modal del login trabajador-->
+  <div class="modal fade" id="modal_logint" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header ml-auto" > 
+       
+    
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+       
+      </div>
+      <div class="modal-body m-0 ">
+     <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
+        <form >
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label"><img src="icono/ic_account_circle_black_24dp_1x.png"  class="img-responsive">Usuario:</label>
+            <input type="text" class="form-control" id="usuario">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="form-control-label"><img src="icono/ic_https_black_24dp_1x.png"  class="img-responsive">Contraseña:</label>
+             <input type="password" class="form-control" id="contraseña">
+          </div>
+          
+          
+        <button type="button" class="btn btn-primary btn-lg btn-block">Iniciar Sesión</button>
+        <p></p>
         </form>
         
        
