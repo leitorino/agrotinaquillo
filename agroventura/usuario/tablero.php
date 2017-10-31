@@ -1,3 +1,14 @@
+<?php 
+
+    session_start();
+
+    if(!isset($_SESSION["usuarioc"])){
+        
+        header('Location: ../index.php');
+    }
+
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,48 +84,30 @@
                                             <th id="estado">Estado </th>
 	                                    </thead>
 	                                    <tbody>
-	                                        <tr>
-	                                            <td>01</td>
-	                                        	<td>Dakota Rice</td>
-	                                        	<td>Niger</td>
-	                                        	<td>Oud-Turnhout</td>
-												<td class="text-primary">$36,738</td>
-	                                        </tr>
-	                                        <tr>
-	                                            <td>02</td>
-	                                        	<td>Minerva Hooper</td>
-	                                        	<td>Curaçao</td>
-	                                        	<td>Sinaai-Waas</td>
-												<td class="text-primary">$23,789</td>
-	                                        </tr>
-	                                        <tr>
-	                                            <td>03</td>
-	                                        	<td>Sage Rodriguez</td>
-	                                        	<td>Netherlands</td>
-	                                        	<td>Baileux</td>
-												<td class="text-primary">$56,142</td>
-	                                        </tr>
-	                                        <tr>
-	                                            <td>04</td>
-	                                        	<td>Philip Chaney</td>
-	                                        	<td>Korea, South</td>
-	                                        	<td>Overland Park</td>
-												<td class="text-primary">$38,735</td>
-	                                        </tr>
-	                                        <tr>
-	                                            <td>05</td>
-	                                        	<td>Doris Greene</td>
-	                                        	<td>Malawi</td>
-	                                        	<td>Feldkirchen in Kärnten</td>
-												<td class="text-primary">$63,542</td>
-	                                        </tr>
-	                                        <tr>
-	                                            <td>06</td>
-	                                        	<td>Mason Porter</td>
-	                                        	<td>Chile</td>
-	                                        	<td>Gloucester</td>
-												<td class="text-primary">$78,615</td>
-	                                        </tr>
+	                                        <?php
+                                            
+                                            include("../bd/conexion.php");
+                                            
+                                            $usuario=$_SESSION["usuarioc"];
+                                            $sql= "SELECT * FROM `persona` WHERE `usuario` = '$usuario'";
+                                            $result = mysqli_query($link, $sql);
+                                            $row = mysqli_fetch_array($result);
+                                            $sql2= "SELECT * FROM `reserva` WHERE `idcliente` = '$row[0]'";
+                                            $result2 = mysqli_query($link, $sql2);
+                                            while($row2=mysqli_fetch_array($result2)){
+                                                echo"<tr>";
+                                                    echo"<td>$row2[0]</td>";
+                                                    echo"<td>$row2[3]</td>";
+                                                    echo"<td>$row2[4]</td>";
+                                                    echo"<td>$row2[5]</td>";
+                                                    echo"<td>0</td>";
+                                                    echo"<td>$row2[6]</td>";
+                                                echo"</tr>";
+                                                
+                                            }
+                                            
+                                            
+                                            ?>
 	                                    </tbody>
 	                                </table>
 
@@ -137,7 +130,7 @@
 	                            </a>
 	                        </li>
 	                        <li>
-	                            <a href="#">
+	                            <a href="../cerrar.php">
 	                                Cerrar Sesión
 	                            </a>
 	                        </li>
