@@ -9,23 +9,23 @@
 	
 	<meta name="author" content="">
 	
-	<link rel="icon" href="foto/logo_agro.png">
+	<link rel="icon" href="../foto/logo_agro.png">
 	
 	<title>Reserva</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     
     <!-- Icons -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- Custom styles for this template -->
-    <link href="css/kkk.css" rel="stylesheet">
-   <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="../css/kkk.css" rel="stylesheet">
+   <link href="../css/bootstrap-datepicker.min.css" rel="stylesheet">
     
 </head>
 <body>
@@ -81,10 +81,10 @@
 	                                  </div>
                                      <div class="row my-2 ">
 	                                        <div class="col-md-4 text-center">
-	                                        <label class="control-label">Fecha de Ingreso</label>
+	                                        
 											<div class="input-group date f-date my-3">
                                              
-                                              <input id="fecha-ingreso" type="text" class="form-control "><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                              <input id="fecha-ingreso" type="text" class="form-control ">
                                             </div>
 	                                        </div>
 	                                        <div class="col-md-4 text-center">
@@ -144,12 +144,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     
     
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script src="../js/custom.js"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     
