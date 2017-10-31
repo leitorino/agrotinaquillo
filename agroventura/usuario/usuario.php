@@ -1,4 +1,4 @@
-<?php 
+<!--<?php 
 
     session_start();
 
@@ -7,7 +7,7 @@
         header('Location: ../index.php');
     }
 
-?> 
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,22 +20,22 @@
 	
 	<meta name="author" content="">
 	
-	<link rel="icon" href="foto/logo_agro.png">
+	<link rel="icon" href="../foto/logo_agro.png">
 	
 	<title>Perfil de usuario</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     
     <!-- Icons -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- Custom styles for this template -->
-    <link href="css/kkk.css" rel="stylesheet">
+    <link href="../css/kkk.css" rel="stylesheet">
     
 </head>
 <body>
@@ -48,11 +48,12 @@
 				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
 				
 				<ul class="nav nav-pills flex-column sidebar-nav">
-					<li class="nav-item my-3"><a class="nav-link" href="#" ><em class="fa fa-dashboard"></em> Tablero</a></li>
-					<li class="nav-item my-3"><a class="nav-link" href="#" ><em class="fa fa-calendar-o"></em> Realizar reserva </a></li>
-					<li class="nav-item my-3"><a class="nav-link" href="#"><em class="fa fa-bar-chart"></em> Realizar pago </a></li>
+					<li class="nav-item my-3"><a class="nav-link" href="tablero.php" ><em class="fa fa-dashboard"></em> Tablero</a></li>
+					<li class="nav-item my-3"><a class="nav-link" href="reserva.php" ><em class="fa fa-calendar-o"></em> Realizar reserva </a></li>
+					<li class="nav-item my-3"><a class="nav-link active" href="#" ><em class="fa fa-user"></em>Perfil </a></li>
 					
-					<li class="nav-item my-3"><a class="nav-link active" href="#perfil" role="tab" data-toggle="tab"><em class="fa fa-clone"></em> Perfil  <span class="sr-only">(current)</span></a></li>
+					
+					
 				</ul>
 				
 				</nav>
@@ -72,68 +73,103 @@
 	                            </div>
 	                            <div class="card-content">
 	                                <form method="post" action="<?=$_SERVER['PHP_SELF']?>">
-	                                    <div class="row">
+	                                    <div class="row my-4">
 	                                        <div class="col-md-5">
-												<div class="form-group ">
-													<label class="control-label">Nombre de usuario(deshabilitado)</label>
-													<input type="text" class="form-control" value="<?php echo' '.$_SESSION["usuarioc"].' ';?>" disabled>
+												
+                                        <div class="form-group group ">
+													<input type="text" class="input2 " id="usuario-r"  maxlength="25"value="<?php echo' '.$_SESSION["usuarioc"].' ';?>" disabled>
+                                                      <span class="highlight"></span>
+                                                      <span class="bar"></span>
+                                                      <label class="label2">Nombre de usuario (deshabilitado)</label>
+
 												</div>
 	                                        </div>
 	                                        <div class="col-md-3">
-												<div class="form-group ">
-													<label class="control-label">Correo</label>
-													<input type="email" class="form-control" name="email" required>
+												
+                                     <div class="form-group group ">
+													<input type="email" class="input2  " id="email-r" name="email"  maxlength="20" required>
+                                                      <span class="highlight"></span>
+                                                      <span class="bar"></span>
+                                                      <label class="label2">correo</label>
+
 												</div>
-	                                        </div>
-	                                        <div class="col-md-4">
-												<div class="form-group ">
-													<label class="control-label">teléfono</label>
-													<input type="text" class="form-control" name="telefono" required>
+                                      </div>
+                                       <div class="col-md-4">
+                                        <div class="form-group group ">
+													<input type="text" class="input2 val-numero " id="telefono-r" name="telefono"  maxlength="20" required>
+                                                      <span class="highlight"></span>
+                                                      <span class="bar"></span>
+                                                      <label class="label2">Teléfono</label>
+
 												</div>
-	                                        </div>
+	                                        
+                                            </div>
+	                                       
 	                                    </div>
                                          <div class="row">
 	                                        <div class="col-md-6">
-												<div class="form-group my-4  ">
-                                                <select class="custom-select d-block " name="tipdoc" required>
-                                                <option value="">Tipo de documento de identificacion</option>
-                                                <option value="1">Cedula</option>
-                                                <option value="2">Rif</option>
-                                                <option value="3">Pasaporte</option>
-                                              </select>
-                                               </div>
+												
+                                              
+                                              <div class="form-group  group my-2">
+
+                                                <select class="form-control input2" id="tipodoc-r" name="tipdoc">
+                                                  <option value="1">Cedula</option>
+                                                  <option value="2">Rif</option>
+                                                  <option value="3">Pasaporte</option>
+
+                                                </select>
+                                                <span class="highlight"></span>
+                                                <span class="bar"></span>
+                                                 <label class="label2">Tipo de Documento</label>
+                                              </div>
+                                              
 	                                        </div>
 	                                        <div class="col-md-6">
-												<div class="form-group ">
-													<label class="control-label">Numero de documento</label>
-													<input type="text" class="form-control" name="numdoc" required>
+												
+                                        <div class="form-group group ">
+													<input type="text" class="input2 val-numero " id="numdoc-r" name="numdoc"  maxlength="30" required>
+                                                      <span class="highlight"></span>
+                                                      <span class="bar"></span>
+                                                      <label class="label2">Número de Documento</label>
+
 												</div>
 	                                        </div>
 	                                    </div>
 	                                    <div class="row">
 	                                        <div class="col-md-6">
-												<div class="form-group ">
-													<label class="control-label">Nombre</label>
-													<input type="text" class="form-control" name="nombre" required>
+												
+                                        <div class="form-group group ">
+													<input type="text" class="input2  " id="nombre-r" name="nombre"  maxlength="30" required>
+                                                      <span class="highlight"></span>
+                                                      <span class="bar"></span>
+                                                      <label class="label2">Nombre</label>
+
 												</div>
 	                                        </div>
 	                                        <div class="col-md-6">
-												<div class="form-group ">
-													<label class="control-label">Apellidos</label>
-													<input type="text" class="form-control" name="apellidos" required>
+												
+                                        <div class="form-group group ">
+													<input type="text" class="input2 val-letras " id="apellido-r" name="apellidos"  maxlength="30" required>
+                                                      <span class="highlight"></span>
+                                                      <span class="bar"></span>
+                                                      <label class="label2">Apellidos</label>
+
 												</div>
 	                                        </div>
 	                                    </div>
 
 	                                    <div class="row">
 	                                        <div class="col-md-12">
-												<div class="form-group ">
-													<label class="control-label">Dirección</label>
-													<input type="text" class="form-control" name="direccion" required>
-												</div>
-	                                        </div>
-	                                    </div>
+												
+	                                        <div class="form-group group ">
+													<input type="text" class="input2  " id="direccion-r" name="direccion"  maxlength="40" required>
+                                                      <span class="highlight"></span>
+                                                      <span class="bar"></span>
+                                                      <label class="label2">Dirección</label>
 
+												</div>
+	                                    </div>
+                                        </div>
 	                                    <input type="submit" class="btn  pull-right color-verde titulo" value="Actualizar Perfil" name="actualizar">
 	                                    <div class="clearfix"></div>
 	                                </form>
@@ -204,24 +240,7 @@
 	                            </div>
 	                        </div>
 	                    </div>
-						<div class="col-md-4">
-    						<div class="card card-profile">
-    							<div class="card-avatar">
-    								<a href="#pablo">
-    									<img class="img" src="img/marc.jpg" />
-    								</a>
-    							</div>
-
-    							<div class="content">
-    								<h6 class="category text-gray">CEO / Co-Founder</h6>
-    								<h4 class="card-title">Alec Thompson</h4>
-    								<p class="card-content">
-    									Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-    								</p>
-    								
-    							</div>
-    						</div>
-		    			</div>
+						
 	                </div>
 	            </div>
 	        </div>
@@ -232,7 +251,7 @@
 	                <nav class="pull-left">
 	                    <ul>
 	                        <li>
-	                            <a href="#">
+	                            <a href="../index.php">
 	                                Inicio
 	                            </a>
 	                        </li>
@@ -241,16 +260,7 @@
 	                                Cerrar Sesión
 	                            </a>
 	                        </li>
-	                        <li>
-	                            <a href="#">
-	                                Portfolio
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="#">
-	                               Blog
-	                            </a>
-	                        </li>
+	                        
 	                    </ul>
 	                </nav>
 	                <p class="copyright pull-right">
@@ -266,12 +276,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     
     
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script src="../js/custom.js"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     
