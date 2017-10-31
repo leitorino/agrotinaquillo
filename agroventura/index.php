@@ -1,3 +1,12 @@
+<?php
+
+error_reporting(0);
+$v1 = $_GET['el'];
+if ($v1 == 1 ){
+    echo'<script>alert("Error al iniciar sesion, nombre de usuario o contraseña erroneos")</script>';
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -90,18 +99,16 @@
       </div>
       <div class="modal-body m-0 ">
      <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
-        <form >
+        <form method="POST" action="login-usuario.php" name="form-usuario">
           <div class="form-group">
             <label for="recipient-name" class="form-control-label"><img src="icono/ic_account_circle_black_24dp_1x.png"  class="img-responsive">Usuario:</label>
-            <input type="text" class="form-control" id="usuario">
+            <input type="text" class="form-control" id="usuario" name="usuario" required>
           </div>
           <div class="form-group">
             <label for="message-text" class="form-control-label"><img src="icono/ic_https_black_24dp_1x.png"  class="img-responsive">Contraseña:</label>
-             <input type="password" class="form-control" id="contraseña">
-          </div>
-          
-          
-        <button type="button" class="btn btn-primary btn-lg btn-block">Iniciar Sesión</button>
+             <input type="password" class="form-control" id="contraseña" name="clave" required>
+            </div>   
+        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Iniciar Sesion"> 
         <p></p>
        <center> <a class="my-4" data-dismiss="modal" data-toggle="modal" data-target="#modal_recuperacion" href="#" >¿Olvidaste tu contraseña?</a> &nbsp;
          <a  data-dismiss="modal" data-toggle="modal" data-target="#modal_registro" href="#" >Registrate</a> </center>
@@ -127,20 +134,21 @@
       </div>
       <div class="modal-body m-0 ">
      <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
-        <form >
+        <form method="POST" action="login-trabajador.php" name="form-trabajador">
           <div class="form-group">
             <label for="recipient-name" class="form-control-label"><img src="icono/ic_account_circle_black_24dp_1x.png"  class="img-responsive">Usuario:</label>
-            <input type="text" class="form-control" id="usuario">
+            <input type="text" class="form-control" id="usuario" name="usuario">
           </div>
           <div class="form-group">
             <label for="message-text" class="form-control-label"><img src="icono/ic_https_black_24dp_1x.png"  class="img-responsive">Contraseña:</label>
-             <input type="password" class="form-control" id="contraseña">
+             <input type="password" class="form-control" id="contraseña" name="clave">
           </div>
           
           
-        <button type="button" class="btn btn-primary btn-lg btn-block">Iniciar Sesión</button>
+        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Iniciar Sesion"> 
         <p></p>
         </form>
+         
         
        
       </div>
