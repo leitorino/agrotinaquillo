@@ -37,7 +37,7 @@
 				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
 
 				<ul class="nav nav-pills flex-column sidebar-nav">
-					<li class="nav-item my-3"><a class="nav-link" href="#" ><em class="fa fa-dashboard"></em> visita</a></li>
+					<li class="nav-item my-3"><a class="nav-link" href="visita.php" ><em class="fa fa-dashboard"></em> visita</a></li>
 					<li class="nav-item my-3"><a class="nav-link active" href="#" ><em class="fa fa-calendar-o"></em>Confirmar visita</a></li>
 
 
@@ -70,6 +70,7 @@
 																		 <th id="monto">Monto</th>
 																		 <th id="t-comprobante">Tipo de Comprobante</th>
 																		 <th id="n-comprobante"># comprobante</th>
+																		  <th id="estado">Estado</th>
 																		 <th id="opciones"></th>
 
 											 <th id="opciones"></th>
@@ -84,6 +85,7 @@
 																		 <td>Salon grande</td>
 																		 <td>1</td>
 																		 <td>1</td>
+																		 <td>el estado</td>
 
 											 									 <td class="td-actions text-right">
 												<a  class="confirmar" href="#" ><i title="confirmar" class="fa fa-check-square mx-2" style="color:green" aria-hidden="true"></i></a>
@@ -102,6 +104,7 @@ Brown" aria-hidden="true"></i></a>
 																		 <td>Salon grande</td>
 																		 <td>1</td>
 																		 <td>1</td>
+																		 <td>El estado</td>
 
 																				 <td class="td-actions text-right">
 												<a  class="confirmar" href="#" ><i title="confirmar" class="fa fa-check-square mx-2" style="color:green" aria-hidden="true"></i></a>
