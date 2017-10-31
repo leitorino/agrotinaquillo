@@ -73,7 +73,7 @@
 	                            </div>
 	                            <div class="card-content">
                                 
-	                                <form class="formulario" name="formulario-r">
+	                                <form class="formulario" name="formulario-r" method="POST" action="registro-producto.php">
 	                                    <div class="row my-3">
                                     <!--   <form>
     
@@ -94,7 +94,7 @@
   </form>-->
 	                                        <div class="col-md-4">
 												<div class="form-group group ">
-													<input type="text" class="input2" id="nombre-r" name="nombre-r"  required>
+													<input type="text" class="input2" id="nombre-r" name="nombre" required>
                                                       <span class="highlight"></span>
                                                       <span class="bar"></span>
                                                       <label class="label2">Nombre</label>
@@ -103,7 +103,7 @@
 	                                        </div>
 	                                        <div class="col-md-4">
 												<div class="form-group group ">
-													<input type="text" class="input2" id="precio-r" name="precio-r"  required>
+													<input type="text" class="input2" id="precio-r" name="precio" required>
                                                       <span class="highlight"></span>
                                                       <span class="bar"></span>
                                                       <label class="label2">Precio</label>
@@ -112,7 +112,7 @@
 	                                        </div>
 	                                        <div class="col-md-4">
 												<div class="form-group group ">
-													<input type="textarea" class="input2" id="id-r" name="id-r"  disabled>
+													<input type="textarea" class="input2" id="id-r"  name="id" disabled>
                                                       <span class="highlight"></span>
                                                       <span class="bar"></span>
                                                       <label class="label2">Id (deshabilitado)</label>
@@ -123,7 +123,7 @@
                                         <div class="row my-5">
 	                                        <div class="col-md-6">
 												<div class="form-group group ">
-													<input type="text" class="input2" id="descripcion-r" name="descripcion-r"  required>
+													<input type="text" class="input2" id="descripcion-r" name="descripcion" required>
                                                       <span class="highlight"></span>
                                                       <span class="bar"></span>
                                                       <label class="label2">Descripcion</label>
@@ -133,7 +133,7 @@
 	                                        <div class="col-md-4 my-2">
 												<div class="form-group group ">
                                                
-                                                <select name="estado-r" class="input2" id="estado-r">
+                                                <select name="estado-r" class="input2" id="estado-r" name="estado">
                                                   <option>Disponible</option>
                                                   <option>No disponible</option>
                                                  
@@ -185,7 +185,6 @@
 	                                <table class="table" id="tabla-trabajador">
 	                                    <thead class="text-primary">
 	                                        
-	                                    	<th id="check"></th>
 	                                    	<th id="id">ID</th>
 	                                    	<th id="nombre">Nombre </th>
 	                                    	<th id="descripción">Descripción</th>
@@ -196,47 +195,28 @@
                                              <th id="opciones"></th>
 	                                    </thead>
 	                                    <tbody><div>
-	                                        <tr>
-	                                            <td>
-                                                  <label>
-                                                    <input type="checkbox" class="option-input checkbox" checked />
-                                                    
-                                                  </label>
-                                                </td>
-                                                <td>01</td>
-	                                        	<td>Refresco</td>
-	                                        	<td> Coca-cola 2l</td>
-	                                        	<td>Bs 15.000</td>
-												<td>Disponible</td>
-                                                
-	                                        	
-	                                        	<td class="td-actions text-right">
-												<a href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
-                                                <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
-
-														</td>
-	                                        </tr>
-	                                        <tr>
-	                                            <td>
-	                                            <label>
-                                                <input type="checkbox" class="option-input checkbox" />
+	                           
+	                                        <?php
                                             
-                                              </label>
-                                            </td>
-                                                 <td>02</td>
-	                                        	<td>Refresco</td>
-	                                        	<td> Coca-cola 1/2</td>
-	                                        	<td>Bs 15.000</td>
-												<td>Disponible</td>
-                                                
-	                                        	
-	                                        	
-	                                        	<td class="td-actions text-right">
-												<a href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
-                                                <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
-
-														</td>
-	                                        </tr>
+                                            include("../bd/conexion.php");
+                                            
+                                            $sql= "SELECT * FROM `producto`";
+                                            $result = mysqli_query($link, $sql);
+                                            while($row=mysqli_fetch_array($result)){
+                                                echo"<tr>";
+                                                    echo"<td>$row[0]</td>";
+                                                    echo"<td>$row[1]</td>";
+                                                    echo"<td>$row[2]</td>";
+                                                    echo"<td>$row[3]</td>";
+                                                    echo"<td>$row[4]</td>";
+                                                    echo'<td class="td-actions text-right">';
+                                                    echo'<a href="borrarprod.php?id='.$row[0].'" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>';
+                                                echo"</tr>";
+                                            }
+                                            
+                                            
+                                            ?>
+                                            
 	                                       </div>
 	                                    </tbody>
 	                                </table>
