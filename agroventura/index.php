@@ -1,12 +1,14 @@
-<!--<?php
+<?php
 
 error_reporting(0);
 $v1 = $_GET['el'];
 if ($v1 == 1 ){
     echo'<script>alert("Error al iniciar sesion, nombre de usuario o contraseña erroneos")</script>';
+}if($v1 == 2){
+    echo'<script>alert("Registro exitoso")</script>';
 }
 
-?>-->
+?>
 
 <!DOCTYPE html>
 
@@ -20,7 +22,7 @@ if ($v1 == 1 ){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-<link rel="icon" href="foto/logo_agro.png">
+
     <title>Agroaventuras C.A.</title>
 
     <!-- Bootstrap core CSS -->
@@ -183,12 +185,12 @@ if ($v1 == 1 ){
       <p class="category">Complete los campos</p>
                   </div>
                   <div class="card-content">
-                      <form>
+                      <form method="POST" action="registro-persona.php">
                           <div class="row my-4">
                               <div class="col-md-5">
 
             <div class="form-group group ">
-              <input type="text" class="input2 " id="usuario" maxlength="30" required>
+              <input type="text" class="input2 " id="usuario" maxlength="30" name="usuario" required>
                                           <span class="highlight"></span>
                                           <span class="bar"></span>
                                           <label class="label2">Nombre de usuario</label>
@@ -198,7 +200,7 @@ if ($v1 == 1 ){
                               <div class="col-md-3">
 
             <div class="form-group group ">
-              <input type="email" class="input2 " id="correo" maxlength="60" required>
+              <input type="email" class="input2 " id="correo" maxlength="60" name="email" required>
                                           <span class="highlight"></span>
                                           <span class="bar"></span>
                                           <label class="label2">Correo</label>
@@ -208,7 +210,7 @@ if ($v1 == 1 ){
                               <div class="col-md-4">
 
             <div class="form-group group ">
-              <input type="password" class="input2 " id="contraseña"  minlength="8" maxlength="50" required>
+              <input type="password" class="input2 " id="contraseña"  minlength="8" maxlength="50" name="clave" required>
                                           <span class="highlight"></span>
                                           <span class="bar"></span>
                                           <label class="label2">Contraseña</label>
@@ -222,7 +224,7 @@ if ($v1 == 1 ){
 
                                    <div class="form-group  group my-2">
 
-                                                           <select class="form-control input2" id="t-identificacion">
+                                                           <select class="form-control input2" id="t-identificacion" name="tipdoc">
                                                              <option value="1">Cédula</option>
                                                              <option value="2">Rif</option>
                                                              <option value="3">Pasaporte</option>
@@ -236,7 +238,7 @@ if ($v1 == 1 ){
                               <div class="col-md-5">
 
             <div class="form-group group ">
-              <input type="text" class="input2 val-numero" id="n-documento" maxlength="30" required>
+              <input type="text" class="input2 val-numero" id="n-documento" maxlength="30" name="numdoc" required>
                                           <span class="highlight"></span>
                                           <span class="bar"></span>
                                           <label class="label2">Número de documento</label>
@@ -246,7 +248,7 @@ if ($v1 == 1 ){
                               <div class="col-md-4">
 
             <div class="form-group group ">
-              <input type="text" class="input2 val-numero" id="telefono" maxlength="20" required>
+              <input type="text" class="input2 val-numero" id="telefono" maxlength="20" name="telefono" required>
                                           <span class="highlight"></span>
                                           <span class="bar"></span>
                                           <label class="label2">Teléfono</label>
@@ -258,7 +260,7 @@ if ($v1 == 1 ){
                               <div class="col-md-6">
 
             <div class="form-group group ">
-              <input type="text" class="input2 " id="nombre" maxlength="60" required>
+              <input type="text" class="input2 " id="nombre" maxlength="60" name="nombre" required>
                                           <span class="highlight"></span>
                                           <span class="bar"></span>
                                           <label class="label2">Nombre </label>
@@ -268,7 +270,7 @@ if ($v1 == 1 ){
                               <div class="col-md-6">
 
             <div class="form-group group ">
-              <input type="text" class="input2 val-letras" id="apellidos" maxlength="40" required>
+              <input type="text" class="input2 val-letras" id="apellidos" maxlength="40" name="apellidos" required>
                                           <span class="highlight"></span>
                                           <span class="bar"></span>
                                           <label class="label2">Apellidos</label>
@@ -281,7 +283,7 @@ if ($v1 == 1 ){
                               <div class="col-md-12">
 
             <div class="form-group group ">
-              <input type="textarea" class="input2 " id="usuario" maxlength="100" required>
+              <input type="textarea" class="input2 " id="usuario" maxlength="100" name="direccion" required>
                                           <span class="highlight"></span>
                                           <span class="bar"></span>
                                           <label class="label2">Dirección</label>
@@ -428,25 +430,43 @@ if ($v1 == 1 ){
     <section id="services">
 
       <div class="container ">
-        <div class="row">
+        <div class="row my-5">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Servicios</h2>
-            <hr class="service ">
+            <hr class="primary">
           </div>
         </div>
       </div>
-      <div class="container MY-2">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-8 text-center">
-            
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+              <h3>Servicios</h3>
+              <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-8 text-center">
-            
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+              <h3>Ready to Ship</h3>
+              <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-8 text-center">
-            
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+              <h3>Up to Date</h3>
+              <p class="text-muted">We update dependencies to keep things fresh.</p>
+            </div>
           </div>
-          
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+              <h3>Made with Love</h3>
+              <p class="text-muted">You have to make your websites with love these days!</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -552,7 +572,7 @@ if ($v1 == 1 ){
     <div class="call-to-action bg-dark">
       <div class="container text-center">
         <h2>Realiza tu reserva ya!</h2>
-        
+        <a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Reservar</a>
       </div>
     </div>
 
