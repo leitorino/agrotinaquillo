@@ -1,5 +1,6 @@
 $('#nuevo-trabajador').appendTo("body");
-$('#consumo_entrada').appendTo("body")
+$('#consumo_entrada').appendTo("body");
+$('#consumo_producto').appendTo("body");
 
 $("#menu-toggle").click(function(e) {
         e.preventDefault();

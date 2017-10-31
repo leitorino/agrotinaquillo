@@ -68,7 +68,7 @@
           <div class="col-md-12">
               <div class="card">
                   <div class="card-header" data-background-color="green">
-                      <h4 class="title">Regirtro </h4>
+                      <h4 class="title">Entrada </h4>
       <p class="category">Complete los campos</p>
                   </div>
                   <div class="card-content">
@@ -169,7 +169,7 @@
                          
 
 
-                          <button type="submit" class="btn  pull-right color-verde titulo">Siguiente</button>
+                          <button type="submit" class="btn  pull-right color-verde titulo" data-dismiss="modal" data-toggle="modal" data-target="#consumo_producto">Siguiente</button>
                           <div class="clearfix"></div>
                       </form>
                   </div>

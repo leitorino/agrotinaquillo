@@ -41,7 +41,7 @@
 					<li class="nav-item my-3"><a class="nav-link " href="confirmar.php" ><em class="fa fa-calendar-o"></em>Confirmar visita</a></li>
 
 
-					<Perfil  <span class="sr-only">(current)</span></a></li>
+					
 				</ul>
 
 				</nav>
@@ -200,6 +200,7 @@
 																				<td>1</td>
 																				<td>01</td>
 																				<td>01</td>
+																				
 
 																			</tr>
 																			<tr>
@@ -267,6 +268,7 @@
 											 									 <td>1</td>
 																				 <td>01</td>
 																		 <td>Salon grande</td>
+																		 <td>Salon grande</td>
 
 
 																		 <td>el estado</td>
@@ -287,6 +289,7 @@ Brown" aria-hidden="true"></i></a>
 																		 <td>el estado</td>
 																		 <td>El estado</td>
 
+                                                                             <td>Salon grande</td>
 																				 <td class="td-actions text-right">
 											 <a  class="detalle" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Detalles de la visita" class="fa fa-pencil-square mx-2" style="color:
 Brown" aria-hidden="true"></i></a>
