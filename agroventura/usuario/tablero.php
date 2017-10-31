@@ -58,7 +58,192 @@
 				</nav>
 			
 	    <div class="main-panel col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4 ml-auto ">
-			<div role="tabpanel" class="tab-pane " id="perfil">
+			<div id="nuevo-trabajador"class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog  modal-lg">
+		    <div class="modal-content">
+		      <div class="modal-header ml-auto" >
+
+
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+
+		      </div>
+		      <div class="modal-body m-0 ">
+		       <section class="my-3">
+
+			        <div class="content">
+			            <div class="container-fluid">
+										<div class="row">
+											 <div class="col-md-12">
+												 <div class="titulo-visita">
+						 							<center><h3>Especificaciones de la Reserva</h3></center>
+						 						</div>
+
+												 <div class="card">
+														<div class="card-header" data-background-color="green">
+																<h4 class="title">Entradas</h4>
+												<p class="category">Cantidad de visitantes</p>
+														</div>
+														 <div class="card-content table-responsive">
+																<table class="table" id="tabla-trabajador">
+																		<thead class="text-primary">
+
+																			 <th id="general">General</th>
+																			<th id="niño">Niño</th>
+																			 <th id="terceraedad">Tercera Edad</th>
+																			 <th id="caney">Tipo de Caney </th>
+																			 <th id="t-pagar">Total a Pagar </th>
+
+
+												<th id="opciones"></th>
+																		</thead>
+																		<tbody><div>
+																				<tr>
+
+																							<td>01</td>
+																					<td>Salon grande</td>
+																					<td>1</td>
+																					<td>01</td>
+																					<td>01</td>
+
+																				</tr>
+																				<tr>
+
+																							 <td>02</td>
+																					<td>cabaña</td>
+																					<td>30</td>
+																					<td>01</td>
+
+																					<td>01</td>
+
+																				</tr>
+																			 </div>
+																		</tbody>
+																</table>
+
+
+
+
+
+														</div>
+												 </div>
+											 </div>
+
+									 </div>
+									 <div class="row">
+											<div class="col-md-12">
+												<div class="card">
+													 <div class="card-header" data-background-color="green">
+															 <h4 class="title">Consumo</h4>
+											 <p class="category">Detalle de los consumos realizados</p>
+													 </div>
+														<div class="card-content table-responsive">
+															 <table class="table" id="tabla-trabajador">
+																	 <thead class="text-primary">
+
+																			<th id="nombre">nombre</th>
+																		 <th id="descripcion">descripcion</th>
+																			<th id="cantidad">cantidad</th>
+																			<th id="t-pagar2">Total a Pagar </th>
+
+
+
+											 <th id="opciones"></th>
+																	 </thead>
+																	 <tbody><div>
+																			 <tr>
+
+																						 <td>01</td>
+																				 <td>Salon grande</td>
+																				 <td>1</td>
+																				  <td>1</td>
+
+
+																			 </tr>
+																			 <tr>
+
+																							<td>02</td>
+																				 <td>cabaña</td>
+																				 <td>30</td>
+																				  <td>1</td>
+
+
+																			 </tr>
+																			</div>
+																	 </tbody>
+															 </table>
+
+
+
+
+
+													 </div>
+												</div>
+											</div>
+
+									</div>
+									<div class="row">
+										 <div class="col-md-12">
+											 <div class="card">
+													<div class="card-header" data-background-color="green">
+															<h4 class="title">Pagos</h4>
+											<p class="category">Detalle de pagos realizados</p>
+													</div>
+													 <div class="card-content table-responsive">
+															<table class="table" id="tabla-trabajador">
+																	<thead class="text-primary">
+
+																		 <th id="t-comprobante">Tipo de comprobante</th>
+																		<th id="n-comprobante">numero de comprobante</th>
+																		 <th id="monto">Monto</th>
+																		 <th id="f-pago">Fecha de pago</th>
+																		 <th id="t-pagar3">Total a Pagar </th>
+
+
+											<th id="opciones"></th>
+																	</thead>
+																	<tbody><div>
+																			<tr>
+
+																						<td>01</td>
+																				<td>Salon grande</td>
+																				<td>1</td>
+																				<td>01</td>
+																				<td>01</td>
+																				
+
+																			</tr>
+																			<tr>
+
+																						 <td>02</td>
+																				<td>cabaña</td>
+																				<td>30</td>
+																				<td>01</td>
+																				<td>01</td>
+
+																			</tr>
+																		 </div>
+																	</tbody>
+															</table>
+
+
+
+
+
+													</div>
+											 </div>
+										 </div>
+
+								 </div>
+			            </div>
+			        </div>
+		</section>
+		        </div>
+		  </div>
+		</div>
+		            </div>
+            <div role="tabpanel" class="tab-pane " id="perfil">
 			    
 			</div>
             <section class="my-3">
@@ -78,9 +263,10 @@
 	                                    	<th id="id">ID</th>
 	                                    	<th id="fecha_reserva">Fecha Reserva</th>
 	                                    	<th id="fecha_ingreso">Fecha De ingreso</th>
-											<th id="fecha_salida">Fecha Salida</th>
+										
                                             <th id="total_pagar">Total Pagar</th>
                                             <th id="estado">Estado </th>
+                                            <th id="opciones"></th>
 	                                    </thead>
 	                                    <tbody>
 	                                        <?php
@@ -98,17 +284,32 @@
                                                     echo"<td>$row2[0]</td>";
                                                     echo"<td>$row2[3]</td>";
                                                     echo"<td>$row2[4]</td>";
-                                                    echo"<td>$row2[5]</td>";
+                                                   
                                                     echo"<td>0</td>";
                                                     echo"<td>$row2[6]</td>";
+                                                 <td class="td-actions text-right">
+											 <a  class="detalle" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Detalles de la visita" class="fa fa-pencil-square mx-2" style="color:
+Brown" aria-hidden="true"></i></a>
+											 									 	 </td>
                                                 echo"</tr>";
                                                 
                                             }
                                             
                                             
                                             ?>
+                                           
 	                                    </tbody>
 	                                </table>
+	                                <div class="row my-3">
+											 							 <div class="col-md-4"></div>
+											 						 <div class="col-md-4">
+	                                <div class="input-group date f-date my-3">
+	                                
+
+																								 <input id="fecha-busqueda" type="text" class="form-control " placeholder="realiza tu busqueda aqui…"><span class="input-group-addon  fa fa-search"></span>
+																							 </div>
+                                        </div>
+                                     </div>
 
 	                            </div>
 	                        </div>
@@ -124,7 +325,7 @@
 	                <nav class="pull-left">
 	                    <ul>
 	                        <li>
-	                            <a href="#">
+	                            <a href="../index.php">
 	                                Inicio
 	                            </a>
 	                        </li>
@@ -158,12 +359,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     
     
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script src="../js/custom.js"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     

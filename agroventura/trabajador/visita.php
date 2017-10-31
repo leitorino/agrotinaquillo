@@ -11,7 +11,7 @@
 
 	<link rel="icon" href="../foto/logo_agro.png">
 
-	<title>Confirmar visita</title>
+	<title>visita</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
