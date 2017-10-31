@@ -1,4 +1,4 @@
-<?php
+<!--<?php
 
 error_reporting(0);
 $v1 = $_GET['el'];
@@ -6,7 +6,7 @@ if ($v1 == 1 ){
     echo'<script>alert("Error al iniciar sesion, nombre de usuario o contraseña erroneos")</script>';
 }
 
-?>
+?>-->
 
 <!DOCTYPE html>
 
@@ -20,7 +20,7 @@ if ($v1 == 1 ){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+<link rel="icon" href="foto/logo_agro.png">
     <title>Agroaventuras C.A.</title>
 
     <!-- Bootstrap core CSS -->
@@ -428,43 +428,25 @@ if ($v1 == 1 ){
     <section id="services">
 
       <div class="container ">
-        <div class="row my-5">
+        <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Servicios</h2>
-            <hr class="primary">
+            <hr class="service ">
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container MY-2">
         <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-              <h3>Servicios</h3>
-              <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-            </div>
+          <div class="col-lg-3 col-md-8 text-center">
+            
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-              <h3>Ready to Ship</h3>
-              <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-            </div>
+          <div class="col-lg-3 col-md-8 text-center">
+            
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-              <h3>Up to Date</h3>
-              <p class="text-muted">We update dependencies to keep things fresh.</p>
-            </div>
+          <div class="col-lg-3 col-md-8 text-center">
+            
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-              <h3>Made with Love</h3>
-              <p class="text-muted">You have to make your websites with love these days!</p>
-            </div>
-          </div>
+          
         </div>
       </div>
 
@@ -570,7 +552,7 @@ if ($v1 == 1 ){
     <div class="call-to-action bg-dark">
       <div class="container text-center">
         <h2>Realiza tu reserva ya!</h2>
-        <a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Reservar</a>
+        
       </div>
     </div>
 
@@ -614,4 +596,3 @@ if ($v1 == 1 ){
   </body>
 
 </html>
-

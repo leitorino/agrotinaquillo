@@ -1,4 +1,4 @@
-  
+
 body,
 html {
   width: 100%;
@@ -12,7 +12,10 @@ hr {
   border-width: 3px;
   border-color:#4FFF64 ; }
 
-
+ .service{
+  max-width: 150px;
+  border-width: 3px;
+  border-color:#fed136 ; }
 a {
   color: black;
   -webkit-transition: all 0.2s;
@@ -21,6 +24,11 @@ a {
   a:focus, a:hover {
     color: black; }
 
+}
+
+
+    
+}
 h1,
 h2,
 h3,
@@ -37,7 +45,7 @@ p {
   margin-bottom: 20px; }
 
 .bg-primary {
-  background-color: #f0f0f0 !important; 
+  background-color: #f0f0f0 !important;
   padding: 20px;
   }
 
@@ -339,12 +347,12 @@ header.masthead {
   font-family: "Oswald";
   text-transform: uppercase;
   color: #4c4c4c;
- 
+
   letter-spacing: 2px;
   font-size: 28px;
   line-height: 10px;
-  
-  
+
+
 }
 
 .filter {
@@ -499,11 +507,11 @@ header.masthead {
 
 /*Tarifas*/
 #services{
-    background:  url("../img/inicio/fondo-autores.png") no-repeat;
+    background:  url("../img/inicio/SERVICIOS.png") no-repeat;
     background-size: cover;
-    min-height: 450px;
+    min-height: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
