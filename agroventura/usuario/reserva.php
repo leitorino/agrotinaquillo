@@ -183,6 +183,116 @@
   </div>
 </div>
    <!-- fin-->
+     <!-- modal producto-->
+   <div class="modal fade" id="consumo_producto" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog " >
+    <div class="modal-content">
+      <div class="modal-header " >
+
+        <img  src="icono/ic_arrow_back_black_24dp_1x.png"  class="img-responsive mr-auto"  data-dismiss="modal" data-toggle="modal" data-target="#modal_login">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+      <div class="modal-body m-0 ">
+     <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
+       <p></p>
+        <div class="row">
+         <div class="col-md-1"></div>
+          <div class="col-md-10 ">
+              <div class="card">
+                  <div class="card-header" data-background-color="green">
+                      <h4 class="title">Producto </h4>
+      <p class="category">Complete los campos</p>
+                  </div>
+                  <div class="card-content">
+                      <form>
+                          <div class="row my-4">
+                             <div class="col-md-8">
+
+                                   <div class="form-group  group my-2">
+
+                                                           <select class="form-control input2" id="t-producto-r">
+                                                             <option value="1">subelo</option>
+                                                             <option value="2">subelo</option>
+                                                             
+
+                                                           </select>
+                                                           <span class="highlight"></span>
+                                                           <span class="bar"></span>
+                                                            <label class="label2">Producto</label>
+                                                         </div>
+                              </div>
+                              
+                              
+                              
+
+                          </div>
+                             <div class="row">
+                              <div class="col-md-7">
+
+            <div class="form-group group ">
+              <input type="text" class="input2 val-numero" id="cantidad-r" maxlength="4" required >
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Cantidad</label>
+
+            </div>
+                              </div>
+                             
+                              
+                          </div>
+                          <div class="row">
+                              <div class="col-md-5">
+
+            <div class="form-group group  my-3">
+              <input type="text" class="input2 val-numero" id="t-pagar-r" maxlength="20" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Total Pagar</label>
+
+            </div>
+                              </div>
+                              
+                          </div>
+                          <div class="row">
+                            <div class="col-md-7">
+                             
+                              <div class="form-group  group my-4">
+
+                                                           <select class="form-control input2" id="t-producto-r">
+                                                             <option value="1">Aceptado</option>
+                                                             <option value="2">Cancelado</option>
+                                                             
+
+                                                           </select>
+                                                           <span class="highlight"></span>
+                                                           <span class="bar"></span>
+                                                            <label class="label2">Estado</label>
+                                                         </div>
+                          </div>
+                              
+                          </div>
+
+                          
+                         
+
+
+                          <button type="submit" class="btn  pull-left color-verde titulo" data-dismiss="modal" data-toggle="modal" data-target="#consumo_producto">Finalizar</button>
+                          <div class="clearfix"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- fin-->
     <div id="nuevo-trabajador"class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog ">
     <div class="modal-content">
