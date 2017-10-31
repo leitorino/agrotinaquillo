@@ -37,7 +37,7 @@
 				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
 
 				<ul class="nav nav-pills flex-column sidebar-nav">
-					<li class="nav-item my-3"><a class="nav-link" href="#" ><em class="fa fa-dashboard"></em> visita</a></li>
+					<li class="nav-item my-3"><a class="nav-link" href="visita.php" ><em class="fa fa-dashboard"></em> visita</a></li>
 					<li class="nav-item my-3"><a class="nav-link active" href="#" ><em class="fa fa-calendar-o"></em>Confirmar visita</a></li>
 
 
