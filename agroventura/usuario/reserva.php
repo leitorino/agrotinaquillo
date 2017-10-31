@@ -39,8 +39,9 @@
 <ul class="nav nav-pills flex-column sidebar-nav">
 <li class="nav-item my-3"><a class="nav-link " href="tablero.php" ><em class="fa fa-dashboard"></em> Tablero</a></li>
 <li class="nav-item my-3"><a class="nav-link active" href="reserva.php" ><em class="fa fa-calendar-o"></em> Realizar reserva </a></li>
-<li class="nav-item my-3"><a class="nav-link" href="Pago.php"><em class="fa fa-bar-chart"></em> Realizar pago </a></li>
-<li class="nav-item my-3"><a class="nav-link " href="usuario.php" role="tab" data-toggle="tab"><em class="fa fa-clone"></em> Perfil  <span class="sr-only">(current)</span></a></li>
+<li class="nav-item my-3"><a class="nav-link" href="usuario.php" ><em class="fa fa-user"></em> Perfil </a></li>
+
+
 
 
 </ul>
