@@ -102,9 +102,11 @@
 
 
 
-
+                                       <button id="modificar" type="submit" class="btn  pull-right color-verde titulo">modificar</button>
 	                                    <button id="registrar" type="submit" class="btn  pull-right color-verde titulo">Registrar</button>
 	                                    <div class="clearfix"></div>
+
+
 	                                </form>
 	                            </div>
 	                        </div>
@@ -149,7 +151,7 @@
 	                                        	<td>1</td>
 
 	                                        	<td class="td-actions text-right">
-												<a href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
+												<a  class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
                                                 <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
 
 														</td>
@@ -161,7 +163,7 @@
 	                                        	<td>30</td>
 
 	                                        	<td class="td-actions text-right">
-												<a href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
+												<a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
                                                 <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
 
 												</td>
@@ -171,8 +173,8 @@
 	                                </table>
 
 	                                 <div class="row my-3">
-                                        <div class="col-md-5"></div>
-	                                    <div class="col-md-2">
+                                        <div class="col-md-4"></div>
+	                                    <div class="col-md-3">
 												<div class="form-group group  ">
 													<input type="search" class="input2 val-letras fa fa-search" id="busqueda"  maxlength="25" placeholder="realiza tu busqueda aqui…" >
                                                       <span class="highlight"></span>
@@ -183,7 +185,7 @@
 	                                        </div>
 	                                        <div class="col-md-3 ml-auto">
 												<div class="form-group group ">
-													<button type="button" class="btn  pull-right color-verde titulo" data-toggle="modal" data-target="#nuevo-trabajador">Nuevo</button>
+													<button id="nuevo" type="button" class="btn  pull-right color-verde titulo" data-toggle="modal" data-target="#nuevo-trabajador">Nuevo</button>
 
 												</div>
 	                                        </div>

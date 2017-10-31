@@ -125,10 +125,7 @@
 	                                    </div>
 
 
-
-
-
-
+																			<button id="modificar" type="submit" class="btn  pull-right color-verde titulo">modificar</button>
 	                                    <button id="registrar" type="submit" class="btn  pull-right color-verde titulo">Registrar</button>
 	                                    <div class="clearfix"></div>
 	                                </form>
@@ -184,7 +181,7 @@
 
 
 	                                        	<td class="td-actions text-right">
-												<a href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
+												<a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
                                                 <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
 
 														</td>
@@ -200,7 +197,7 @@
 
 
 	                                        	<td class="td-actions text-right">
-												<a href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
+												<a class="editar" data-toggle="modal" data-target="#nuevo-trabajador"class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
                                                 <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
 
 														</td>
@@ -221,7 +218,7 @@
 	                                        </div>
 	                                        <div class="col-md-3 ml-auto">
 												<div class="form-group group ">
-													<button type="button" class="btn  pull-right color-verde titulo" data-toggle="modal" data-target="#nuevo-trabajador">Nuevo</button>
+													<button id="nuevo" type="button" class="btn  pull-right color-verde titulo" data-toggle="modal" data-target="#nuevo-trabajador">Nuevo</button>
 
 												</div>
 	                                        </div>

@@ -21,3 +21,15 @@ $('.val-letras').keydown(function (e) {
             return false;
         }
     });
+
+
+    $(".editar").click(function() { //Al hacer click al boton, Se Muestra el Div
+      $("#modificar").fadeIn(0000); //aparece el div
+      $("#registrar").fadeOut(0000); //se oculta el div
+
+    });
+$("#nuevo").click(function() {
+  $("#registrar").fadeIn(0000);
+  $("#modificar").fadeOut(0000);
+
+});
