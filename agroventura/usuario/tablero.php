@@ -1,4 +1,4 @@
-<?php 
+<!--<?php 
 
     session_start();
 
@@ -7,7 +7,7 @@
         header('Location: ../index.php');
     }
 
-?> 
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,22 +20,22 @@
 	
 	<meta name="author" content="">
 	
-	<link rel="icon" href="foto/logo_agro.png">
+	<link rel="icon" href="../foto/logo_agro.png">
 	
 	<title>tablero</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     
     <!-- Icons -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- Custom styles for this template -->
-    <link href="css/kkk.css" rel="stylesheet">
+    <link href="../css/kkk.css" rel="stylesheet">
    
     
 </head>
@@ -50,10 +50,9 @@
 				
 				<ul class="nav nav-pills flex-column sidebar-nav">
 					<li class="nav-item my-3"><a class="nav-link active" href="#" ><em class="fa fa-dashboard"></em> Tablero</a></li>
-					<li class="nav-item my-3"><a class="nav-link" href="#" ><em class="fa fa-calendar-o"></em> Realizar reserva </a></li>
-					<li class="nav-item my-3"><a class="nav-link" href="#"><em class="fa fa-bar-chart"></em> Realizar pago </a></li>
+					<li class="nav-item my-3"><a class="nav-link" href="reserva.php" ><em class="fa fa-calendar-o"></em> Realizar reserva </a></li>
+					<li class="nav-item my-3"><a class="nav-link" href="usuario.php" ><em class="fa fa-user"></em> Perfil</a></li>
 					
-					<li class="nav-item my-3"><a class="nav-link " href="#perfil" role="tab" data-toggle="tab"><em class="fa fa-clone"></em> Perfil  <span class="sr-only">(current)</span></a></li>
 				</ul>
 				
 				</nav>

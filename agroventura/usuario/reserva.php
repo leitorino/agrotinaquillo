@@ -180,7 +180,7 @@
                          
 
 
-                          <button type="submit" class="btn  pull-right color-verde titulo" data-dismiss="modal" data-toggle="modal" data-target="#consumo_producto">Siguiente</button>
+                           <button id="registrar2-r" type="submit" class="btn  pull-right color-verde titulo"data-dismiss="modal" data-toggle="modal" data-target="#consumo_producto">Siguiente</button>
                           <div class="clearfix"></div>
                       </form>
                   </div>
