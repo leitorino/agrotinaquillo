@@ -32,7 +32,7 @@
             $row2 = mysqli_fetch_array($result2);
 
             
-            $sql= "INSERT INTO `trabajor` ( `idpersona`, `estado`, `rango`, `codigo`) VALUES ('$row[0]', '$estado', '$rango', '$codigo');";
+            $sql= "INSERT INTO `trabajor` ( `idpersona`, `estado`, `rango`, `codigo`) VALUES ('$row2[0]', '$estado', '$rango', '$codigo');";
 
             if (mysqli_query($link, $sql)) {
                 header('Location: administrador.php');
