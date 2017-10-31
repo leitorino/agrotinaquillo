@@ -294,7 +294,7 @@
 </div>
    <!-- fin-->
     <!-- modal pago-->
-   <div class="modal fade" id="pagar-nuevo" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal fade" id="nuevo-pago" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg " >
     <div class="modal-content">
       <div class="modal-header " >
@@ -306,7 +306,7 @@
 
       </div>
       <div class="modal-body m-0 ">
-     <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
+     <center> <img src="../foto/logo_agro.png" alt="" class="img-responsive"></center>
        <p></p>
         <div class="row">
           <div class="col-md-12">
@@ -400,7 +400,7 @@
                          
 
 
-                          <button type="submit" class="btn  pull-right color-verde titulo" data-dismiss="modal" data-toggle="modal" data-target="#consumo_producto">Siguiente</button>
+                          <button type="submit" class="btn  pull-right color-verde titulo" data-dismiss="modal" >Realizar Pago</button>
                           <div class="clearfix"></div>
                       </form>
                   </div>
@@ -544,8 +544,8 @@
                                     
 <th id="fingreso">Fecha Ingreso</th>
                                     
-<th id="total">Total</th>
-                                    
+<th id="total">Total Pagar</th>
+  <th id="total">Resta</th>                                  
 <th id="estado">Estado</th>
 <th id="opciones"></th>
                                     </thead>
@@ -555,8 +555,10 @@
                                                 <td>01</td>
                                         <td>Dakota Rice</td>
                                         <td>Niger</td>
-                                        <td>Oud-Turnhout</td>
+                                        
+                                        <td class="text-primary">$36,738</td>
 <td class="text-primary">$36,738</td>
+                                        <td>Oud-Turnhout</td>
 
                                         <td class="td-actions text-right">
 <a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:brown" aria-hidden="true"></i></a>
@@ -570,8 +572,10 @@
                                                  <td>02</td>
                                         <td>Minerva Hooper</td>
                                         <td>Curaçao</td>
+                                          <td class="text-primary">$36,738</td>
+<td class="text-primary">$36,738</td>
                                         <td>Sinaai-Waas</td>
-<td class="text-primary">$23,789</td>
+
 
                                         <td class="td-actions text-right">
 <a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:brown" aria-hidden="true"></i></a>

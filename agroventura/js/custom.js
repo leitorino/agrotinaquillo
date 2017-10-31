@@ -1,7 +1,7 @@
 $('#nuevo-trabajador').appendTo("body");
 $('#consumo_entrada').appendTo("body");
 $('#consumo_producto').appendTo("body");
-$('#nuevo_pago').appendTo("body");
+$('#nuevo-pago').appendTo("body");
 
 $("#menu-toggle").click(function(e) {
         e.preventDefault();
