@@ -627,6 +627,11 @@ footer .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
  color:#fff;}
+ .titulo-visita {
+   font-weight: 700;
+   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   text-transform: uppercase;
+  color:black;}
 
 
 /*iconos*/

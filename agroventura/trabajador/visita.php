@@ -65,7 +65,7 @@
 			            <div class="container-fluid">
 										<div class="row">
 											 <div class="col-md-12">
-												 <div class="">
+												 <div class="titulo-visita">
 						 							<center><h3>Especificaciones de la Reserva</h3></center>
 						 						</div>
 
