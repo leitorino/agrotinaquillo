@@ -1,5 +1,17 @@
+<?php
+
+error_reporting(0);
+$v1 = $_GET['el'];
+if ($v1 == 1 ){
+    echo'<script>alert("Error al iniciar sesion, nombre de usuario o contraseña erroneos")</script>';
+}
+
+?>
 
 <!DOCTYPE html>
+
+
+
 <html lang="es">
 
   <head>
@@ -602,3 +614,4 @@
   </body>
 
 </html>
+
