@@ -131,8 +131,8 @@
 												<div class="form-group  group">
 
                                                 <select class="form-control input2" id="estado-r">
-                                                  <option>Activo</option>
-                                                  <option>Inactivo</option>
+                                                  <option value="1">Activo</option>
+                                                  <option value="2">Inactivo</option>
 
                                                 </select>
                                                 <span class="highlight"></span>
