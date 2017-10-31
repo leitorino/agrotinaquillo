@@ -153,7 +153,7 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/inicio/galeria7.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -290,11 +290,11 @@ header.masthead {
     border-color: white;
     background-color: white; }
   .btn-default .badge {
-    color: white;
+    color: black;
     background-color: #222222; }
 /*btn-primary se esta utilizando*/
 .btn-primary {
-  color: white;
+  color: black;
   border-color:#4FFF64;
   background-color: #4FFF64; }
   .btn-primary.focus, .btn-primary:focus {
@@ -314,7 +314,7 @@ header.masthead {
     .open > .btn-primary.dropdown-toggle.focus,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle:hover {
-      color: white;
+      color: black;
       border-color: #1BBD36;
       background-color: #1BBD36; }
   .btn-primary.active, .btn-primary:active,

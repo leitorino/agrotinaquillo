@@ -312,7 +312,7 @@ if ($v1 == 1 ){
         <div class="header-content-inner">
           <h1 id="homeHeading">Bienvenidos a Agroaventuras</h1>
           <hr>
-          <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+          
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Más Información</a>
         </div>
       </div>
@@ -322,106 +322,25 @@ if ($v1 == 1 ){
 
 			<div class="container-fluid ">
 
-
-						<ul class="nav nav-tabs ">
-							<li class="nav-item ">
-
-							       <a href="#inicio" class="nav-link active" role="tab" data-toggle="tab">Inicio</a>
-
-
-							</li>
-							<li class="nav-item">
-
-							       <a href="#acerca_de" class="nav-link " role="tab" data-toggle="tab">Acerca de</a>
-
-
-							</li>
-							<li class="nav-item">
-
-							       <a href="#tarifa" class="nav-link " role="tab" data-toggle="tab">Tarifas</a>
-
-
-							</li>
-
-
-						</ul>
-                   <div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="inicio">
-                                <div class="row my-5">
+ <div class="row my-5">
                                           <div class="col-lg-8 mx-auto text-center">
-                                            <h2 class="section-heading">Agroaventuras</h2>
-
-                                            <p class="text-faded my-2">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-
-                                          </div>
-                                 </div>
-							</div>
-                            <div role="tabpanel" class="tab-pane " id="acerca_de">
-
-
-                                <div class="row">
-                                          <div class="col-lg-12 my-5  text-center">
-                                             <h2 class="seccion-inicio-titulo">Acerca de</h2>
-                                            <h3 class="seccion-inicio-sub text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                                          </div>
-                                 </div>
-                                 <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/inicio/harry.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading posicion">
-
-
-                    <h4 class="subheading">Misión</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/inicio/harry2.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-
-                    <h4 class="subheading">Visión</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/inicio/harry3.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-
-                    <h4 class="subheading">Normas</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-
-                       </div>
-				<div role="tabpanel" class="tab-pane " id="tarifa">
-
-
+                                            <h2 class="section-heading">Agroaventuras </h2>
+                                            <hr class="primary">
+                                            <p >El lugar en donde la diversión,el entretenimiento y el descanso son una experiencia inolvidable</p>
+                                            
+                                            <p class="">Cuenta con todas sus  instalaciones equipadaspara que usted,su familia y sus amigos disfruten de las bellezas de la naturaleza en un lugar tranquilo y acogedor.</p>
+                                            <p class="">Nuestras instalaciones son ideales para planes vacacionales ,campamentos y grupos familiares.</p>
+                                            <div class="container" >
+    <div class="row my-5">
+    <div class="col-md-6 col-sm-12 col-xs-12"><img class="img-responsive " src="img/inicio/general.jpg" /></div>
+        <div class="col-md-6 col-sm-12 col-xs-12"><img class="img-responsive" src="img/inicio/niño.png" /></div>
+        <div class="col-md-6 col-sm-12 col-xs-12"><img class="img-responsive" src="img/inicio/3edad.jpg" /></div>
+        <div class="col-md-6 col-sm-12 col-xs-12"><img class="img-responsive" src="img/inicio/discapacitados.jpg" /></div>
+  </div>
+              </div>
             </div>
-           </div>
+
+                                 </div>
         </div>
 
 
@@ -437,8 +356,8 @@ if ($v1 == 1 ){
       <div class="container-fluid">
         <div class="row no-gutter popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/fullsize/1-g.png">
+              <img class="img-fluid" src="img/portfolio/fullsize/1-g.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -452,8 +371,8 @@ if ($v1 == 1 ){
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/fullsize/2-j.png">
+              <img class="img-fluid" src="img/portfolio/fullsize/2-j.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -467,8 +386,8 @@ if ($v1 == 1 ){
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/fullsize/3-j.png">
+              <img class="img-fluid" src="img/portfolio/fullsize/3-j.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -483,7 +402,7 @@ if ($v1 == 1 ){
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/fullsize/4-j.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -497,8 +416,8 @@ if ($v1 == 1 ){
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/fullsize/5-j.png">
+              <img class="img-fluid" src="img/portfolio/fullsize/5-j.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -512,8 +431,8 @@ if ($v1 == 1 ){
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/fullsize/6-j.png">
+              <img class="img-fluid" src="img/portfolio/fullsize/6-j.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -533,7 +452,7 @@ if ($v1 == 1 ){
     <div class="call-to-action bg-dark">
       <div class="container text-center">
         <h2>Realiza tu reserva ya!</h2>
-        <a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Reservar</a>
+      
       </div>
     </div>
 
@@ -541,20 +460,21 @@ if ($v1 == 1 ){
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">Contactanos!</h2>
             <hr class="primary">
-            <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <p>Entrada frente a la bomba PDV de Taguanes, Vía las arenerasTinaquillo Edo. Cojedes</p>
+            <p>Horarios: Sabados, Domingos y dias Feriados de  9:00 am a 5:00pm</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x sr-contact"></i>
-            <p>123-456-6789</p>
+            <p>0414-59-74326</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x sr-contact"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
+              <a href="mailto:your-email@your-domain.com">agroaventuras@gmail.com</a>
             </p>
           </div>
         </div>
