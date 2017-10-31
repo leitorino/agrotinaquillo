@@ -1,12 +1,4 @@
-<?php
 
-error_reporting(0);
-$v1 = $_GET['el'];
-if ($v1 == 1 ){
-    echo'<script>alert("Error al iniciar sesion, nombre de usuario o contraseña erroneos")</script>';
-}
-
-?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -39,7 +31,7 @@ if ($v1 == 1 ){
 
     <!-- Custom styles for this template -->
     <link href="css/remplazo.css" rel="stylesheet">
-
+      <link href="css/kkk.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
@@ -48,7 +40,7 @@ if ($v1 == 1 ){
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
        <a class="navbar-brand" href="#page-top"><img src="foto/logo_agro.png" alt="" class="img-responsive"></a>
-        
+
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -78,9 +70,9 @@ if ($v1 == 1 ){
                         </li>
                     </ul>
                 </div>
-            </li>  
-            
-            
+            </li>
+
+
           </ul>
         </div>
       </div>
@@ -89,13 +81,13 @@ if ($v1 == 1 ){
   <div class="modal fade" id="modal_login" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header ml-auto" > 
-       
-    
+      <div class="modal-header ml-auto" >
+
+
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-       
+
       </div>
       <div class="modal-body m-0 ">
      <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
@@ -107,14 +99,13 @@ if ($v1 == 1 ){
           <div class="form-group">
             <label for="message-text" class="form-control-label"><img src="icono/ic_https_black_24dp_1x.png"  class="img-responsive">Contraseña:</label>
              <input type="password" class="form-control" id="contraseña" name="clave" required>
-            </div>   
-        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Iniciar Sesion"> 
+            </div>
+        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Iniciar Sesion">
         <p></p>
-       <center> <a class="my-4" data-dismiss="modal" data-toggle="modal" data-target="#modal_recuperacion" href="#" >¿Olvidaste tu contraseña?</a> &nbsp;
-         <a  data-dismiss="modal" data-toggle="modal" data-target="#modal_registro" href="#" >Registrate</a> </center>
+       <center>  <a  data-dismiss="modal" data-toggle="modal" data-target="#modal_registro" href="#" >Registrate</a> </center>
         </form>
-        
-       
+
+
       </div>
     </div>
   </div>
@@ -124,13 +115,13 @@ if ($v1 == 1 ){
   <div class="modal fade" id="modal_logint" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header ml-auto" > 
-       
-    
+      <div class="modal-header ml-auto" >
+
+
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-       
+
       </div>
       <div class="modal-body m-0 ">
      <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
@@ -143,107 +134,160 @@ if ($v1 == 1 ){
             <label for="message-text" class="form-control-label"><img src="icono/ic_https_black_24dp_1x.png"  class="img-responsive">Contraseña:</label>
              <input type="password" class="form-control" id="contraseña" name="clave">
           </div>
-          
-          
-        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Iniciar Sesion"> 
+
+
+        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Iniciar Sesion">
         <p></p>
         </form>
-         
-        
-       
+
+
+
       </div>
     </div>
   </div>
 </div>
    <!-- fin modal-->
-   <!-- modal recuperacion-->
-   <div class="modal fade" id="modal_recuperacion" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header " > 
-       
-        <img  src="icono/ic_arrow_back_black_24dp_1x.png"  class="img-responsive mr-auto"  data-dismiss="modal" data-toggle="modal" data-target="#modal_login">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-       
-      </div>
-      <div class="modal-body m-0 ">
-     <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
-        <form>
-          <div class="form-group my-4">
-            <input type="text" class="form-control" id="correo" placeholder="Ingrese su correo electronico">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="form-control-label">Pregunta de seguridad:</label>
-             <select class="form-control" id="pregunta_seguridad">
-              <option>1</option><!-- en la parte de las opciones se tiene que cargar de php-->
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="form-group ">
-            <input type="text" class="form-control" id="respuesta" placeholder="Respuesta">
-          </div>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Buscar</button>
-        </form>
-        
-        
-      </div>
-    </div>
-  </div>
-</div>
-   <!--fin recuperacion-->
+
    <!-- modal registro-->
    <div class="modal fade" id="modal_registro" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg " >
     <div class="modal-content">
-      <div class="modal-header " > 
-       
+      <div class="modal-header " >
+
         <img  src="icono/ic_arrow_back_black_24dp_1x.png"  class="img-responsive mr-auto"  data-dismiss="modal" data-toggle="modal" data-target="#modal_login">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-       
+
       </div>
       <div class="modal-body m-0 ">
      <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
        <p></p>
-        <form >
-  <div class="form-row my-3">
-    <div class="form-group col-md-6">
-     
-      <input type="text" class="form-control" id="usuario-reg" placeholder="Nombre de usuario">
-    </div>
-    <div class="form-group col-md-6">
-      
-      <input type="password" class="form-control" id="contraseña-reg" placeholder="Contraseña">
-    </div>
-  </div>
-   <div class="form-group  my-3">
-             <select class="custom-select d-block " required>
-    <option value="">Pregunta de seguridad</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-  </select>
-   </div>
-   <div class="form-group my-3">
-     
-      <input type="text" class="form-control" id="respuesta2-reg" placeholder="Respuesta de seguridad">
-    </div>
-  
-  <div class="form-group  my-3">
-     
-      <input type="email" class="form-control" id="correo-reg" placeholder="correo electronico">
-    </div>
-  
-  <button type="button" class="btn btn-primary btn-lg btn-block">Registrar</button>
-</form>
-        
-       
+        <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header" data-background-color="green">
+                      <h4 class="title">Regirtro </h4>
+      <p class="category">Complete los campos</p>
+                  </div>
+                  <div class="card-content">
+                      <form>
+                          <div class="row my-4">
+                              <div class="col-md-5">
+
+            <div class="form-group group ">
+              <input type="text" class="input2 " id="usuario" maxlength="30" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Nombre de usuario</label>
+
+            </div>
+                              </div>
+                              <div class="col-md-3">
+
+            <div class="form-group group ">
+              <input type="email" class="input2 " id="correo" maxlength="60" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Correo</label>
+
+            </div>
+                              </div>
+                              <div class="col-md-4">
+
+            <div class="form-group group ">
+              <input type="password" class="input2 " id="contraseña"  minlength="8" maxlength="50" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Contraseña</label>
+
+            </div>
+                              </div>
+
+                          </div>
+                             <div class="row">
+                              <div class="col-md-3">
+
+                                   <div class="form-group  group my-2">
+
+                                                           <select class="form-control input2" id="t-identificacion">
+                                                             <option value="1">Cédula</option>
+                                                             <option value="2">Rif</option>
+                                                             <option value="3">Pasaporte</option>
+
+                                                           </select>
+                                                           <span class="highlight"></span>
+                                                           <span class="bar"></span>
+                                                            <label class="label2">Tipo de documentación </label>
+                                                         </div>
+                              </div>
+                              <div class="col-md-5">
+
+            <div class="form-group group ">
+              <input type="text" class="input2 val-numero" id="n-documento" maxlength="30" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Número de documento</label>
+
+            </div>
+                              </div>
+                              <div class="col-md-4">
+
+            <div class="form-group group ">
+              <input type="text" class="input2 val-numero" id="telefono" maxlength="20" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Teléfono</label>
+
+            </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+
+            <div class="form-group group ">
+              <input type="text" class="input2 " id="nombre" maxlength="60" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Nombre </label>
+
+            </div>
+                              </div>
+                              <div class="col-md-6">
+
+            <div class="form-group group ">
+              <input type="text" class="input2 val-letras" id="apellidos" maxlength="40" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Apellidos</label>
+
+            </div>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-12">
+
+            <div class="form-group group ">
+              <input type="textarea" class="input2 " id="usuario" maxlength="100" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Dirección</label>
+
+            </div>
+                              </div>
+                          </div>
+
+
+                          <button type="submit" class="btn  pull-right color-verde titulo">Registrar</button>
+                          <div class="clearfix"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -259,48 +303,48 @@ if ($v1 == 1 ){
         </div>
       </div>
     </header>
- 
+
     <section class="bg-primary " id="about">
-     
+
 			<div class="container-fluid ">
-				 
-						
+
+
 						<ul class="nav nav-tabs ">
 							<li class="nav-item ">
-							  
+
 							       <a href="#inicio" class="nav-link active" role="tab" data-toggle="tab">Inicio</a>
-    
-                              
+
+
 							</li>
 							<li class="nav-item">
-							
+
 							       <a href="#acerca_de" class="nav-link " role="tab" data-toggle="tab">Acerca de</a>
-    
-                               
+
+
 							</li>
 							<li class="nav-item">
-							
+
 							       <a href="#tarifa" class="nav-link " role="tab" data-toggle="tab">Tarifas</a>
-    
-                               
+
+
 							</li>
-						
-							
+
+
 						</ul>
                    <div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="inicio">
                                 <div class="row my-5">
                                           <div class="col-lg-8 mx-auto text-center">
                                             <h2 class="section-heading">Agroaventuras</h2>
-                                            
+
                                             <p class="text-faded my-2">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                                            
+
                                           </div>
                                  </div>
 							</div>
                             <div role="tabpanel" class="tab-pane " id="acerca_de">
-                               
-                              
+
+
                                 <div class="row">
                                           <div class="col-lg-12 my-5  text-center">
                                              <h2 class="seccion-inicio-titulo">Acerca de</h2>
@@ -316,7 +360,7 @@ if ($v1 == 1 ){
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading posicion">
-                    
+
 
                     <h4 class="subheading">Misión</h4>
                   </div>
@@ -331,7 +375,7 @@ if ($v1 == 1 ){
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                   
+
                     <h4 class="subheading">Visión</h4>
                   </div>
                   <div class="timeline-body">
@@ -345,7 +389,7 @@ if ($v1 == 1 ){
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    
+
                     <h4 class="subheading">Normas</h4>
                   </div>
                   <div class="timeline-body">
@@ -353,24 +397,24 @@ if ($v1 == 1 ){
                   </div>
                 </div>
               </li>
-              
+
             </ul>
           </div>
         </div>
-                      
+
                        </div>
 				<div role="tabpanel" class="tab-pane " id="tarifa">
-                
-                 
+
+
             </div>
-           </div>      
+           </div>
         </div>
-        
-        
+
+
     </section>
 
     <section id="services">
-     
+
       <div class="container ">
         <div class="row my-5">
           <div class="col-lg-12 text-center">
@@ -411,7 +455,7 @@ if ($v1 == 1 ){
           </div>
         </div>
       </div>
-       
+
     </section>
 
     <section class="p-0" id="portfolio">
@@ -554,7 +598,7 @@ if ($v1 == 1 ){
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.js"></script>
-
+    <script src="js/custom.js"></script>
   </body>
 
 </html>
