@@ -293,6 +293,127 @@
   </div>
 </div>
    <!-- fin-->
+    <!-- modal pago-->
+   <div class="modal fade" id="pagar-nuevo" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg " >
+    <div class="modal-content">
+      <div class="modal-header " >
+
+        <img  src="../icono/ic_arrow_back_black_24dp_1x.png"  class="img-responsive mr-auto"  data-dismiss="modal" data-toggle="modal" data-target="#nuevo-trabajador">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+      <div class="modal-body m-0 ">
+     <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
+       <p></p>
+        <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header" data-background-color="green">
+                      <h4 class="title">Pago</h4>
+      <p class="category">Realizar pagos</p>
+                  </div>
+                  <div class="card-content">
+                      <form>
+                          <div class="row my-4">
+                              <div class="col-md-4">
+
+                                   <div class="form-group  group my-2">
+
+                                                           <select class="form-control input2" id="t-comprobanter">
+                                                             <option value="1">subelo</option>
+                                                             <option value="2">subelo</option>
+                                                             
+
+                                                           </select>
+                                                           <span class="highlight"></span>
+                                                           <span class="bar"></span>
+                                                            <label class="label2">Tipo de comprobante </label>
+                                                         </div>
+                              </div>
+                              <div class="col-md-4">
+
+            <div class="form-group group ">
+              <input type="text" class="input2 val-numero" id="n-comprobante-r" maxlength="30" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Número de Comprobante</label>
+
+            </div>
+                              </div>
+                              <div class="col-md-4">
+
+            <div class="form-group group ">
+              <input type="textarea" class="input2 val-numero" id="t-pagar-r" maxlength="30" disabled>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Total Pagar</label>
+
+            </div>
+                              </div>
+                              
+
+                          </div>
+                             <div class="row">
+                              
+                              <div class="col-md-5">
+<div class="form-group  group my-2">
+
+                                                           <select class="form-control input2" id="t-caney-r">
+                                                             <option value="1">Por Comfirmar</option>
+                                                             <option value="2">Cancelado</option>
+                                                             
+
+                                                           </select>
+                                                           <span class="highlight"></span>
+                                                           <span class="bar"></span>
+                                                            <label class="label2">Estado</label>
+                                                         </div>
+                              </div>
+                              
+                          </div>
+                          <div class="row">
+                              <div class="col-md-5">
+
+            <div class="form-group group  my-3">
+              <input type="text" class="input2 val-numero" id="abono-r" maxlength="20" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Abono</label>
+
+            </div>
+                              </div>
+                              <div class="col-md-5">
+<div class="form-group  group my-4">
+
+                                                          <div class="input-group date f-date my-3">
+
+																								 <input id="fecha-pago-r" type="text" class="form-control " placeholder="Fecha de Pago"><span class="input-group-addon  fa  fa-calendar-o"></span>
+																							 </div>
+                                                         </div>
+                              </div>
+                          </div>
+
+                          
+                         
+
+
+                          <button type="submit" class="btn  pull-right color-verde titulo" data-dismiss="modal" data-toggle="modal" data-target="#consumo_producto">Siguiente</button>
+                          <div class="clearfix"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- fin-->
     <div id="nuevo-trabajador"class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog ">
     <div class="modal-content">
@@ -438,7 +559,8 @@
 <td class="text-primary">$36,738</td>
 
                                         <td class="td-actions text-right">
-<a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
+<a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:brown" aria-hidden="true"></i></a>
+                                               <a class="pagar-nuevo" data-toggle="modal" data-target="#nuevo-pago" href="#" ><i title="Realizar pago" class="fa fa-money mx-3" style="color:green" aria-hidden="true"></i></a>
                                                 <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
 
 </td>
@@ -452,7 +574,8 @@
 <td class="text-primary">$23,789</td>
 
                                         <td class="td-actions text-right">
-<a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
+<a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:brown" aria-hidden="true"></i></a>
+                                               <a class="pagar-nuevo" data-toggle="modal" data-target="#nuevo-pago" href="#" ><i title="Realizar Pago" class="fa fa-money mx-3" style="color:green" aria-hidden="true"></i></a>
                                                 <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
 
 </td>
