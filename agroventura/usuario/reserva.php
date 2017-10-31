@@ -49,6 +49,140 @@
 
     <div class="main-panel col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4 ml-auto ">
 
+   <!-- modal registro-->
+   <div class="modal fade" id="consumo_entrada" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg " >
+    <div class="modal-content">
+      <div class="modal-header " >
+
+        <img  src="icono/ic_arrow_back_black_24dp_1x.png"  class="img-responsive mr-auto"  data-dismiss="modal" data-toggle="modal" data-target="#modal_login">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+      <div class="modal-body m-0 ">
+     <center> <img src="foto/logo_agro.png" alt="" class="img-responsive"></center>
+       <p></p>
+        <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header" data-background-color="green">
+                      <h4 class="title">Regirtro </h4>
+      <p class="category">Complete los campos</p>
+                  </div>
+                  <div class="card-content">
+                      <form>
+                          <div class="row my-4">
+                              <div class="col-md-4">
+
+            <div class="form-group group ">
+              <input type="text" class="input2 val-numero" id="general-r" maxlength="4" required >
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">General</label>
+
+            </div>
+                              </div>
+                              <div class="col-md-4">
+
+            <div class="form-group group ">
+              <input type="text" class="input2 val-numero" id="niño-r" maxlength="4" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Niños</label>
+
+            </div>
+                              </div>
+                              <div class="col-md-4">
+
+            <div class="form-group group ">
+              <input type="text" class="input2 val-numero" id="tercera_edad-r" maxlength="4" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Tercera edad</label>
+
+            </div>
+                              </div>
+
+                          </div>
+                             <div class="row">
+                              <div class="col-md-5">
+
+                                   <div class="form-group  group my-2">
+
+                                                           <select class="form-control input2" id="t-precio-r">
+                                                             <option value="1">subelo</option>
+                                                             <option value="2">subelo</option>
+                                                             
+
+                                                           </select>
+                                                           <span class="highlight"></span>
+                                                           <span class="bar"></span>
+                                                            <label class="label2">Tipo precio </label>
+                                                         </div>
+                              </div>
+                              <div class="col-md-5">
+<div class="form-group  group my-2">
+
+                                                           <select class="form-control input2" id="t-caney-r">
+                                                             <option value="1">subelo</option>
+                                                             <option value="2">subelo</option>
+                                                             
+
+                                                           </select>
+                                                           <span class="highlight"></span>
+                                                           <span class="bar"></span>
+                                                            <label class="label2">Tipo Caney </label>
+                                                         </div>
+                              </div>
+                              
+                          </div>
+                          <div class="row">
+                              <div class="col-md-5">
+
+            <div class="form-group group  my-3">
+              <input type="text" class="input2 val-numero" id="t-pagar-r" maxlength="20" required>
+                                          <span class="highlight"></span>
+                                          <span class="bar"></span>
+                                          <label class="label2">Total Ppagar</label>
+
+            </div>
+                              </div>
+                              <div class="col-md-5">
+<div class="form-group  group my-4">
+
+                                                           <select class="form-control input2" id="t-caney-r">
+                                                             <option value="1">Activo</option>
+                                                             <option value="2">No Disponible</option>
+                                                             
+
+                                                           </select>
+                                                           <span class="highlight"></span>
+                                                           <span class="bar"></span>
+                                                            <label class="label2">Estado </label>
+                                                         </div>
+                              </div>
+                          </div>
+
+                          
+                         
+
+
+                          <button type="submit" class="btn  pull-right color-verde titulo">Siguiente</button>
+                          <div class="clearfix"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- fin-->
     <div id="nuevo-trabajador"class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog ">
     <div class="modal-content">
@@ -69,7 +203,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header" data-background-color="green">
-                                <h4 class="title">Rserva</h4>
+                                <h4 class="title">Reserva</h4>
 <p class="category">Registro de nueva reserva</p>
                             </div>
                             <div class="card-content">
@@ -139,7 +273,7 @@
 
 
 
-                                    <button id="registrar" type="submit" class="btn  pull-right color-verde titulo">Siguiente</button>
+                                    <button id="registrar" type="submit" class="btn  pull-right color-verde titulo"data-dismiss="modal" data-toggle="modal" data-target="#consumo_entrada">Siguiente</button>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>

@@ -1,4 +1,5 @@
-$('#nuevo-trabajador').appendTo("body")
+$('#nuevo-trabajador').appendTo("body");
+$('#consumo_entrada').appendTo("body")
 
 $("#menu-toggle").click(function(e) {
         e.preventDefault();
