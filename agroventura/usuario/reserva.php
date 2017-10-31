@@ -1,3 +1,13 @@
+<?php 
+
+    session_start();
+
+    if(!isset($_SESSION["usuarioc"])){
+        
+        header('Location: ../index.php');
+    }
+
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -550,40 +560,29 @@
 <th id="opciones"></th>
                                     </thead>
                                     <tbody><div>
-                                        <tr>
-
-                                                <td>01</td>
-                                        <td>Dakota Rice</td>
-                                        <td>Niger</td>
+                                        <?php
                                         
-                                        <td class="text-primary">$36,738</td>
-<td class="text-primary">$36,738</td>
-                                        <td>Oud-Turnhout</td>
-
-                                        <td class="td-actions text-right">
-<a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:brown" aria-hidden="true"></i></a>
-                                               <a class="pagar-nuevo" data-toggle="modal" data-target="#nuevo-pago" href="#" ><i title="Realizar pago" class="fa fa-money mx-3" style="color:green" aria-hidden="true"></i></a>
-                                                <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
-
-</td>
-                                        </tr>
-                                        <tr>
-
-                                                 <td>02</td>
-                                        <td>Minerva Hooper</td>
-                                        <td>Curaçao</td>
-                                          <td class="text-primary">$36,738</td>
-<td class="text-primary">$36,738</td>
-                                        <td>Sinaai-Waas</td>
-
-
-                                        <td class="td-actions text-right">
-<a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:brown" aria-hidden="true"></i></a>
-                                               <a class="pagar-nuevo" data-toggle="modal" data-target="#nuevo-pago" href="#" ><i title="Realizar Pago" class="fa fa-money mx-3" style="color:green" aria-hidden="true"></i></a>
-                                                <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
-
-</td>
-                                        </tr>
+                                        include("../bd/conexion.php");
+                                            
+                                            $usuario=$_SESSION["usuarioc"];
+                                            $sql= "SELECT * FROM `persona` WHERE `usuario` = '$usuario'";
+                                            $result = mysqli_query($link, $sql);
+                                            $row = mysqli_fetch_array($result);
+                                            $sql2= "SELECT * FROM `reserva` WHERE `idcliente` = '$row[0]'";
+                                            $result2 = mysqli_query($link, $sql2);
+                                            while($row2=mysqli_fetch_array($result2)){
+                                                echo"<tr>";
+                                                    echo"<td>$row2[0]</td>";
+                                                    echo"<td>$row2[3]</td>";
+                                                    echo"<td>$row2[4]</td>";
+                                                    echo"<td>0</td>";
+                                                    echo"<td>$row2[6]</td>";
+                                                    echo'<td class="td-actions text-right">
+                                         <a href="borrar2.php?id='.$row2[0].'" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>';
+                                                echo"</tr>";
+                                            }
+                                        
+                                        ?>
                                        </div>
                                     </tbody>
                                 </table>
