@@ -278,8 +278,8 @@
                           
                          
 
-
-                          <button type="submit" class="btn  pull-left color-verde titulo" data-dismiss="modal" data-toggle="modal" data-target="#consumo_producto">Finalizar</button>
+                            <button id="modificar"type="submit" class="btn  pull-left color-verde titulo" data-dismiss="modal" >Editar</button>
+                          <button id="registrar"type="submit" class="btn  pull-left color-verde titulo" data-dismiss="modal" >Finalizar</button>
                           <div class="clearfix"></div>
                       </form>
                   </div>
@@ -383,7 +383,7 @@
 
 
 
-                                    <button id="registrar" type="submit" class="btn  pull-right color-verde titulo"data-dismiss="modal" data-toggle="modal" data-target="#consumo_entrada">Siguiente</button>
+                                    <button id="registrar-r" type="submit" class="btn  pull-right color-verde titulo"data-dismiss="modal" data-toggle="modal" data-target="#consumo_entrada">Siguiente</button>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>
@@ -438,7 +438,7 @@
 <td class="text-primary">$36,738</td>
 
                                         <td class="td-actions text-right">
-<a href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
+<a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
                                                 <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
 
 </td>
@@ -452,7 +452,7 @@
 <td class="text-primary">$23,789</td>
 
                                         <td class="td-actions text-right">
-<a href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
+<a class="editar" data-toggle="modal" data-target="#nuevo-trabajador" href="#" ><i title="Editar" class="fa fa-pencil" style="color:green" aria-hidden="true"></i></a>
                                                 <a href="#" ><i title="Eliminar" class="fa fa-times mx-3 " style="color:red" aria-hidden="true"></i></a>
 
 </td>
@@ -463,18 +463,15 @@
 
                                  <div class="row my-3">
                                         <div class="col-md-4"></div>
-                                    <div class="col-md-3">
-<div class="form-group group  ">
-<input type="search" class="input2 val-letras fa fa-search" id="busqueda"  maxlength="25" placeholder="realiza tu busqueda aqui…" >
-                                                      <span class="highlight"></span>
-                                                      <span class="bar"></span>
+                                    <div class="col-md-4">
+<div class="input-group date f-date my-3">
 
-                                                     <center><i class="fa fa-search" aria-hidden="true"></i></center>
-</div>
+																								 <input id="fecha-ingreso" type="text" class="form-control " placeholder="realiza tu busqueda aqui…"><span class="input-group-addon  fa fa-search"></span>
+																							 </div>
                                         </div>
                                         <div class="col-md-3 ml-auto">
 <div class="form-group group ">
-<button type="button" class="btn  pull-right color-verde titulo" data-toggle="modal" data-target="#nuevo-trabajador">Nuevo</button>
+<button  id="nuevo" type="button" class="btn  pull-right color-verde titulo" data-toggle="modal" data-target="#nuevo-trabajador">Nuevo</button>
 
 </div>
                                         </div>
